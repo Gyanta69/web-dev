@@ -1,0 +1,41 @@
+@font-face {
+    font-family: LactureDemo-Regular;
+    src: url(./LactureDemo-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: LactureDemo-Regular;
+    
+    line-height: 1.6;
+    background-color: #000000;
+    text-align: center;
+}
+h1 {
+    
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 6rem;
+    background-color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin-top: 400px;
+}
+h2 {
+    color: #ffcc00;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rosybrown;
+}
+.pink-background{
+    color: #ffcc00;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 0, 255);
+}
