@@ -1,50 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@font-face {
+  font-family: "LactureDemo-Regular";
+  src: url(./D-1/LactureDemo-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #ffffff;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
 }
 
-.container{
-    position: relative;
-    width: 80%;
-    height: 100vh;
-
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  opacity: 0.5;
 }
 
-.box{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-        /* background: linear-gradient(45deg, #ff84ad, #a0d9ff); */
-    /* background: radial-gradient( #d7235f, #000000, #ffffff); */
-    background: conic-gradient( #281726, #6405f1, #fe0000, #fffb00, #00ff40, #00ffee, #0000ff, #ff00bf, #ff0000, #281726);
-    overflow: hidden;
-    
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  /* background: linear-gradient(45deg, #ff84ad, #a0d9ff); */
+  /* background: radial-gradient( #d7235f, #000000, #ffffff); */
+  background: conic-gradient(
+    #281726,
+    #6405f1,
+    #fe0000,
+    #fffb00,
+    #00ff40,
+    #00ffee,
+    #0000ff,
+    #ff00bf,
+    #ff0000,
+    #281726
+  );
+  overflow: hidden;
 }
 
-#outer{
-    height: 200px;
-    width: 200px;
-    background-color: #00ff40;
+#outer {
+  height: 50%;
+  width: 50%;
+  background-color: #00ff40;
 }
 
-#inner{
-    height: 70%;
-    width: 70%;
-    background-color: #ff0000;
-    position: relative;
-    top: 50px;
-    left: 50px;
+@font-face {
+  font-family: "LactureDemo-Regular";
+  src: url(./D-1/LactureDemo-Regular.otf);
+}
+.hero-txt {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 1, 8);
+  font-size: 5em;
+  font-family: "LactureDemo-Regular", sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
