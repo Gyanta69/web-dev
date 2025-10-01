@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Helvetica-Now';
+    src: url(fonnts.com-Helvetica_Now_Display_W05_Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main-div{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main-div h1{
+    font-size: 300px;
+    font-weight: 250px;
+    color: white;
+    padding-left: 200px;
+    font-family: 'Helvetica-Now';
+    
+   
+}
+.nav-bar{
+    padding: 10px 30px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'Helvetica-Now';
+}
+
+.bottom-left{
+    width: 300px;
+    color: white;
+    padding-top: 120px;
+    padding-left: 30px;
+    position: absolute;
+}
+.bottom-left h2{
+    font-size: 40px;
+    font-family: 'Helvetica-Now';
+}
+
+#materials{
+    font-size: 40px;
+    font-family: 'Helvetica-Now';
+    padding-top: 30px;
+}
+
+.bottom-left p{
+    font-size: 20px;
+    font-family: 'Helvetica-Now';
+    text-align: justify;
+    word-spacing: 2px;
+}
+
+.footer{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    display: flex;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'Helvetica-Now';
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Before pseudo-element - appears before the text */
+.footer a::before{
+    content: "→ "; /* Add an arrow or any symbol */
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+/* After pseudo-element - appears after the text */
+.footer a::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+/* Hover effects */
+.footer a:hover::before{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer a:hover::after{
+    width: 100%;
+}
+
+.footer a:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+#first{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    right: 450px;
+    object-fit: cover;
+    
+}
+#second{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    object-fit: cover;
+    
+}
+#third{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 350px;
+    right: 730px;
+    object-fit: cover;
+    
+}
+
+.nav-bar{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left navigation section */
+.nav-left {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Center navigation section */
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-center h3 {
+    text-decoration: underline;
+    color: white;
+    font-family: 'Helvetica-Now';
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Right navigation section */
+.nav-right {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* Navigation links styling with before/after effects */
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Helvetica-Now';
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+/* Before effect - sliding dot */
+.nav-left a::before, .nav-right a::before {
+    content: "•";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* After effect - underline */
+.nav-left a::after, .nav-right a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+/* Hover effects for navigation links */
+.nav-left a:hover::before, .nav-right a:hover::before {
+    opacity: 1;
+    left: -10px;
+}
+
+.nav-left a:hover::after, .nav-right a:hover::after {
+    width: 100%;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #ccc;
+    transform: translateY(-2px);
+}
+
