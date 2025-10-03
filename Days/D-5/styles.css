@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  background: maroon;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box1,
+.box2,
+.box3 {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border: 4px solid white;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar {
+  height: 55px;
+  width: 100%;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.hero {
+  width: 100%;
+  height: 70%;
+  background-image: url("https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_mediumtall_2x.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "LactureDemo-Regular", sans-serif;
+  font-weight: 600;
+}
+.hero h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "LactureDemo-Regular", sans-serif;
+  font-weight: normal;
+  color: grey;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+.hero-buttons button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(1, 113, 227);
+  background-color: rgb(1, 113, 227);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.iphone-air{
+    margin-top: 20px;
+    height: 70%;
+    color: black;
+    background-image: url("https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_mediumtall_2x.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.iphone-air h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "LactureDemo-Regular", sans-serif;
+    font-weight: 600;
+}
+
+.iphone-air p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: "LactureDemo-Regular", sans-serif;
+    font-weight: normal;
+    color: grey;
+}
+
+.air-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.air-buttons button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(1, 113, 227);
+    background-color: rgb(1, 113, 227);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.iphone-17{
+    margin-top: 20px;
+    height: 70%;
+    color: black;
+    background-image: url("https://www.apple.com/v/home/ch/images/heroes/iphone-17/hero_iphone_17__c5vvimu9a20y_mediumtall_2x.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.iphone-17 h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "LactureDemo-Regular", sans-serif;
+    font-weight: 600;
+}
+
+.iphone-17 p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: "LactureDemo-Regular", sans-serif;
+    font-weight: normal;
+    color: grey;
+}
+.iphone-17-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.iphone-17-buttons button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(1, 113, 227);
+    background-color: rgb(1, 113, 227);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
