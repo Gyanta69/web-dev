@@ -40,3 +40,36 @@ h3{
     margin-top: 20px;
    -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
+
+.parent{
+    height: 500px;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-shrink: 0;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.child{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+
+}
+
+.child img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.parent::-webkit-scrollbar{
+    background-color: aqua;
+}
+
+.parent::-webkit-scrollbar-thumb{
+    background-color: blue;
+    border-radius: 20px;
+}
