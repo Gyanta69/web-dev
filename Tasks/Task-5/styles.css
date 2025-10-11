@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Demo";
+  src: url("./LactureDemo-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Demo", sans-serif;
+  position: absolute;
+}
+
+aside {
+  width: 450px;
+  height: 100%;
+  background-color: #11101d;
+  padding: 20px 0;
+  position: fixed;
+}
+aside h1 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Demo", sans-serif;
+  padding-top: 20px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
