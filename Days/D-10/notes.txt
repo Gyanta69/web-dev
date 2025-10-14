@@ -1,0 +1,2 @@
+100 vw = full viewport width
+100vw = 800px

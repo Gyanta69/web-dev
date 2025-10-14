@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+html {
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.red {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}
+.red .blue {
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+}
+
+h1 {
+  font-size: 1rem;
+}/*# sourceMappingURL=styles.css.map */
