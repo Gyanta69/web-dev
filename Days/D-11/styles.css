@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+html {
+  color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+main section .top {
+  width: 100%;
+}
+main section .top img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main section .bottom {
+  background-color: rgb(58, 54, 54);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding: 1rem;
+}
+main section .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section .bottom h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+main section .bottom p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+main section .bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  overflow: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=styles.css.map */
