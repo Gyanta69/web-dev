@@ -15,6 +15,10 @@ html {
   color: white;
 }
 
+section {
+  max-width: 1600px;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -33,11 +37,11 @@ main section .top {
 }
 main section .top img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 10px;
 }
 main section .bottom {
-  background-color: rgb(58, 54, 54);
-  border-radius: 1rem;
+  background-color: rgb(87, 83, 83);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 2.2rem;
@@ -56,7 +60,7 @@ main section .bottom h1 {
 main section .bottom p {
   font-weight: 300;
   font-size: 1.2rem;
-  opacity: 0.8;
+  opacity: 0.6;
   line-height: 1.5rem;
 }
 main section .bottom button {
@@ -71,5 +75,22 @@ main section .bottom button {
 @media (min-width: 900px) {
   main section {
     flex-direction: row;
+    padding: 0rem 2rem;
+  }
+  main section .top,
+  main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section .bottom .text h1 {
+    font-size: 3.5rem;
+  }
+  main section .bottom .text p {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
