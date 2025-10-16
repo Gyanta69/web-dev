@@ -1,7 +1,12 @@
+@font-face {
+  font-family: demo;
+  src: url("./LactureDemo-Regular.otf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: demo, sans-serif;
 }
 
 html,
@@ -28,7 +33,7 @@ main {
   width: 100%;
   @include flex-column(0rem);
 
-  section {
+  section.view1 {
     width: 100%;
     @include flex-column(2rem);
 
@@ -39,12 +44,12 @@ main {
 
       img {
         width: 100%;
-        border-radius: 10px;
+        border-radius: 7px;
       }
     }
     .bottom {
       background-color: rgb(87, 83, 83);
-      border-radius: 10px;
+      border-radius: 7px;
       @include flex-column(2.2rem);
       padding: 1rem;
 
@@ -72,13 +77,36 @@ main {
       }
     }
   }
+
+  section.view2{
+    @include flex-column(1rem);
+    width: 100%;
+    padding: 1rem;
+    
+    .top, .bottom{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      .element{
+        text-align: center;
+        @include flex-column(0.5rem);
+        h2{
+          font-size: 3rem;
+          font-weight: 300;
+        }
+      }
+
+
+  }
+}
 }
 
 @media (min-width: 900px) {
   main {
-    section {
+    section.view1 {
       flex-direction: row;
-      padding: 0rem 2rem;
+      padding: 0rem 1rem;
       .top,
       .bottom {
         width: 50%;
@@ -100,5 +128,11 @@ main {
         }
       }
     }
+
+    section.view2{
+      flex-direction: row;
+      padding-top: 1rem;
+    }
+
   }
 }
