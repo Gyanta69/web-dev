@@ -1,7 +1,12 @@
+@font-face {
+    font-family: demo;
+    src: url(./LactureDemo-Regular.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: demo, sans-serif;
 
 }
 html, body{
