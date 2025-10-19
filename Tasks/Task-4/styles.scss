@@ -35,7 +35,6 @@ main{
     section:hover{
         flex-grow: 3;
         transition: all .7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-        cursor: pointer;
     }
 
     section:nth-child(1){

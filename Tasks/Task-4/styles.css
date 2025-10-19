@@ -32,7 +32,6 @@ main section {
 main section:hover {
   flex-grow: 3;
   transition: all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  cursor: pointer;
 }
 main section:nth-child(1) {
   background-image: url("https://plus.unsplash.com/premium_photo-1674824835422-1447f5901086?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWxsJTIwc2Vhc29ucyUyMGluJTIwamFwYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500");
