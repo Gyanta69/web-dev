@@ -26,7 +26,7 @@ main section {
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
-  background-color: rgb(209, 0, 0);
+  background-color: rgb(136, 64, 64);
   border: 4px solid rgb(255, 255, 255);
 }
 main section:hover {
