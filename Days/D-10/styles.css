@@ -24,7 +24,7 @@ html {
 .red .blue {
   height: 100%;
   width: 50%;
-  background-color: blue;
+  background-color: rgb(141, 141, 170);
 }
 
 h1 {
