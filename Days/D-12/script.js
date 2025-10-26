@@ -43,3 +43,25 @@ console.log("End of script.").startsWith("This");
 
 // statements and expressions
 //a code that gives fixed answer
+5 + 10; // expression
+var result = 5 + 10; // statement
+console.log(result); // 15
+if (result > 10) {
+  console.log("Result is greater than 10"); // statement
+}
+for (let i = 0; i < 5; i++) {
+  console.log(i); // statement
+}
+while (result < 20) {
+  result++; // statement
+}
+console.log(result); // 20
+function add(x, y) {
+  return x + y; // statement
+}
+console.log(add(5, 10)); // 15
+let multiply = (x, y) => x * y; // expression
+console.log(multiply(5, 10)); // 50
+let divide = function (x, y) {
+  return x / y; // statement
+}
