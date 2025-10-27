@@ -68,6 +68,8 @@ let divide = function (x, y) {
 
 // data types
 let num = 42; // number
+let dih = 3.14; // floating-point number
+let character = null; // null value
 let str = "Hello, World!"; // string
 let bool = true; // boolean
 let obj = { name: "Alice", age: 30 }; // object
@@ -85,4 +87,37 @@ console.log(typeof undef); // "undefined"
 console.log(typeof nul); // "object"
 console.log(typeof sym); // "symbol"
 console.log(typeof bigIntNum); // "bigint"
+
+[1, 2, 3, 4, 5
+]
+
+//objects
+let person = {
+  name: "Alice",
+  age: 30,
+  occupation: "Engineer",
+  email: "alice@example.com"
+};
+console.log(person.name);
+
+//with symbols you can create unique property keys for objects
+
+//undefined
+let undefVar; // variable declared but not assigned a value
+console.log(undefVar); // outputs: undefined
+
+//NaN done impossible mathematical operation
+let notANumber = 0 / 0; // division by zero results in NaN
+console.log(notANumber); // outputs: NaN
+
+// relative and primitive data types
+let primitiveValue = 42; // primitive data type (number)
+let referenceValue = { key: "value" }; // reference data type (object)
+
+// Copying primitive value
+let copiedPrimitive = primitiveValue;
+copiedPrimitive = 100;
+console.log(primitiveValue); // outputs: 42
+console.log(copiedPrimitive); // outputs: 100
+
 
