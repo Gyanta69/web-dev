@@ -65,3 +65,24 @@ console.log(multiply(5, 10)); // 50
 let divide = function (x, y) {
   return x / y; // statement
 }
+
+// data types
+let num = 42; // number
+let str = "Hello, World!"; // string
+let bool = true; // boolean
+let obj = { name: "Alice", age: 30 }; // object
+let arr = [1, 2, 3, 4, 5]; // array
+let undef; // undefined
+let nul = null;
+let sym = Symbol("unique"); // symbol
+let bigIntNum = 9007199254740991n; // BigInt
+console.log(typeof num); // "number"
+console.log(typeof str); // "string"
+console.log(typeof bool); // "boolean"
+console.log(typeof obj); // "object"
+console.log(typeof arr); // "object"
+console.log(typeof undef); // "undefined"
+console.log(typeof nul); // "object"
+console.log(typeof sym); // "symbol"
+console.log(typeof bigIntNum); // "bigint"
+
