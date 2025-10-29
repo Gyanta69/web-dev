@@ -95,3 +95,18 @@ console.log("Final Value: " + finalValue); //Default Value
 let obj = {}
 
 obj?.name = "John";
+console.log("Name: " + obj?.name);
+
+// variable hoisting with operators
+
+console.log("Value of hoistedVar: " + hoistedVar); //undefined
+var hoistedVar = 10;
+console.log("Value of hoistedVar after declaration: " + hoistedVar); //10
+// Note: let and const do not hoist in the same way as var
+// console.log("Value of hoistedLet: " + hoistedLet); //ReferenceError
+let hoistedLet = 20;
+console.log("Value of hoistedLet after declaration: " + hoistedLet); //20
+// console.log("Value of hoistedConst: " + hoistedConst); //ReferenceError
+const hoistedConst = 30;
+console.log("Value of hoistedConst after declaration: " + hoistedConst); //30
+
