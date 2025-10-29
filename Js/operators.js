@@ -37,8 +37,8 @@ console.log("x <= 9: " + (x <= 9));
 // What are logical operators?
 //Logical operators are used to combine multiple conditions or to invert a condition.
 // && (AND), || (OR), ! (NOT)
-//true && false = false
-//true || false = true
+//true && true = true otherwise false
+//false || false = false otherwise true
 //!true = false
 
 let p = true;
@@ -47,3 +47,51 @@ console.log("p && q: " + (p && q)); //false
 console.log("p || q: " + (p || q));
 console.log("!p: " + (!p)); //false
 console.log("!q: " + (!q)); //true
+
+// Ternary Operator
+let age = 19;
+let canVote = (age >= 18) ? "Yes, can vote" : "No, cannot vote";
+console.log("Can vote: " + canVote);
+
+//typeof Operator
+console.log("Type of a: " + typeof a); //number
+console.log("Type of y: " + typeof y); //string
+console.log("Type of p: " + typeof p); //boolean
+console.log("Type of canVote: " + typeof canVote); //string
+console.log("Type of undefined variable: " + typeof z); //undefined
+
+// instanceof Operator
+let date = new Date();
+console.log("date instanceof Date: " + (date instanceof Date)); //true
+console.log("a instanceof Number: " + (a instanceof Number)); //false
+let numObj = new Number(10);
+console.log("numObj instanceof Number: " + (numObj instanceof Number)); //true
+console.log("y instanceof String: " + (y instanceof String)); //false
+
+//string operators
+let str1 = "Hello, ";
+let str2 = "World!";
+let greeting = str1 + str2;
+console.log("Greeting: " + greeting); //Hello, World!
+
+// spread and rest operator
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combinedArr = [...arr1, ...arr2];
+console.log("Combined Array: " + combinedArr); //1,2,3,4,5,6        
+function sum(...numbers) {
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log("Sum of numbers: " + sum(1, 2, 3, 4, 5)); //15
+
+// nullish coalescing operator
+let userInput = null;
+let defaultValue = "Default Value";
+let finalValue = userInput ?? defaultValue;
+console.log("Final Value: " + finalValue); //Default Value
+
+// optional chaining operator
+let obj = {}
+
+obj?.name = "John";
