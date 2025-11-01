@@ -120,5 +120,11 @@ copiedPrimitive = 100;
 console.log(primitiveValue); // outputs: 42
 console.log(copiedPrimitive); // outputs: 100
 
+// Copying reference value
+let copiedReference = referenceValue;
+copiedReference
+.key = "newValue";
+console.log(referenceValue.key); // outputs: "newValue"
+console.log(copiedReference.key); // outputs: "newValue"
 
 
