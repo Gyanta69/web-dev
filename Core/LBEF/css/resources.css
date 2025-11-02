@@ -1,0 +1,204 @@
+/* Resources Page Styles */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 123, 255, 0.9), rgba(0, 123, 255, 0.9)),
+                url('../assets/images/hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-underline {
+    width: 80px;
+    height: 4px;
+    background: #fff;
+    margin: 0 auto 1.5rem;
+    border-radius: 2px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Resources Section */
+.resources-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+/* Resource Category */
+.resource-category {
+    margin-bottom: 4rem;
+}
+
+.resource-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.category-header i {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.category-header h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Resource Grid */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Resource Card */
+.resource-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Resource Icon */
+.resource-icon {
+    width: 50px;
+    height: 50px;
+    background: #e8f1ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.resource-icon i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Resource Content */
+.resource-content {
+    flex-grow: 1;
+}
+
+.resource-content h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.resource-content p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Download and View Links */
+.download-link,
+.view-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.download-link:hover,
+.view-link:hover {
+    color: #0056b3;
+    gap: 0.75rem;
+}
+
+.download-link i,
+.view-link i {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 3rem 0;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .category-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .resource-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .resource-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .resource-content h3 {
+        font-size: 1.1rem;
+    }
+}

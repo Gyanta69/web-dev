@@ -1,0 +1,186 @@
+/* Page Header */
+.page-header {
+    background-color: #f8f9fa;
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.header-underline {
+    width: 80px;
+    height: 4px;
+    background-color: #ff4444;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.vision-mission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Vision Card */
+.vision-card {
+    /* Blue Gradient */
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vision-content {
+    flex: 1;
+}
+
+.vision-content h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.vision-content p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.vision-icon {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vision-icon i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Mission Cards */
+.mission-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mission-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+}
+
+.mission-icon {
+    width: 60px;
+    height: 60px;
+    background: #4285f4;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mission-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.mission-content h3 {
+    color: #1a1a1a;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.mission-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .mission-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+
+    .vision-mission-section {
+        padding: 60px 0;
+    }
+
+    .vision-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .vision-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .vision-content p {
+        font-size: 1rem;
+    }
+
+    .vision-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .vision-icon i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .mission-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
