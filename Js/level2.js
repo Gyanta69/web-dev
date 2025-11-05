@@ -55,4 +55,22 @@ while (num%2 === 0) {
     num = Number(num);
 }
 
-//
+// WAP to simulate ATM withdrawal until balance is 0 or user tries to withdraw more than balance 3 times
+let balance = 1000;
+let count = 0;
+let flag = false;
+
+while(balance > 0 && count !== 3) {
+    let withdrawAmount = prompt("Enter amount to withdraw:");
+    count++;
+    if(withdrawAmount <= balance) balance -= withdraw;
+    else{
+        flag = true;
+        break;
+    }
+}
+if(flag === true) {
+    console.log("Insufficient balance. Transaction failed.");
+}
+console.log("Your remaining balance is: " + balance);
+
