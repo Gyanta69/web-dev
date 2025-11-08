@@ -90,3 +90,55 @@ function hoistedFunction() {
 let nonHoistedFunction = function() {
    console.log("This function is not hoisted!");
 }
+//pure function example
+// A pure function always produces the same output for the same input and has no side effects
+
+function pureFunction(x, y) {
+   return x + y;
+}
+console.log(pureFunction(2, 3)); // Output: 5
+console.log(pureFunction(2, 3));
+ // Output: 5
+
+// Impure function example
+let counter = 0;
+function impureFunction() {
+   counter++;
+   return counter;
+}
+console.log(impureFunction()); // Output: 1
+console.log(impureFunction()); // Output: 2
+
+// Callback function example
+function fetchData(callback) {
+   setTimeout(() => {
+
+         const data = { name: "John", age: 30 };
+         callback(data);
+   }, 1000);
+}
+fetchData(function(data) {
+   console.log("Data received:", data);
+}
+); // Output after 1 second: Data received: { name: "John", age: 30 }
+
+// Higher-order function example 
+function higherOrderFunction(fn, value) {
+   return fn(value);
+}
+function double(x) {
+   return x * 2;
+}
+console.log(higherOrderFunction(double, 5)); // Output: 10
+
+// Function constructor example
+let Person = new Function("name", "age", `
+   this.name = name;
+   this.age = age;
+   this.greet = function() {
+       return 'Hello, ' + this.name;
+   }
+`);
+let john = new Person("John", 25);
+console.log(john.greet()); // Output: Hello, John
+
